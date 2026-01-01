@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\SmartRoster.Domain\SmartRoster.Domain.csproj" />
+    <ProjectReference Include="..\SmartRoster.Application\SmartRoster.Application.csproj" />
+    <ProjectReference Include="..\SmartRoster.Shared\SmartRoster.Shared.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

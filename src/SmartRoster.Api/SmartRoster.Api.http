@@ -1,0 +1,6 @@
+@SmartRoster.Api_HostAddress = http://localhost:5128
+
+GET {{SmartRoster.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SmartRoster.Api/SmartRoster.Api.csproj" />
+    <Project Path="src/SmartRoster.Application/SmartRoster.Application.csproj" />
+    <Project Path="src/SmartRoster.Domain/SmartRoster.Domain.csproj" />
+    <Project Path="src/SmartRoster.Infrastructure/SmartRoster.Infrastructure.csproj" />
+    <Project Path="src/SmartRoster.Shared/SmartRoster.Shared.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/SmartRoster.IntegrationTests/SmartRoster.IntegrationTests.csproj" />
+    <Project Path="test/SmartRoster.UnitTests/SmartRoster.UnitTests.csproj" />
+  </Folder>
+</Solution>
