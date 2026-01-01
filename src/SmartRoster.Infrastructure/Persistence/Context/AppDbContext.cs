@@ -12,6 +12,9 @@ namespace SmartRoster.Infrastructure.Persistence.Context
         protected override void OnModelCreating(ModelBuilder builder) {
             builder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
 
+            //Global Soft-Delete Filter
+            
+
             base.OnModelCreating(builder);
         }
     }

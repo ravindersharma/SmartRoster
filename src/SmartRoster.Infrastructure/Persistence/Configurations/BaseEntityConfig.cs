@@ -15,7 +15,12 @@ public abstract class BaseEntityConfig<T> : IEntityTypeConfiguration<T> where T 
         builder.HasKey(x => x.Id);
 
         builder.Property(x => x.Id).ValueGeneratedNever();
-        builder.Property(x => x.CreatedAt).IsRequired();
+        builder.Property(x => x.CreatedAt).IsRequired().HasDefaultValueSql("CURRENT_TIMESTAMP"); // SQLite-safe
+        builder.Property(x => x.CreatedBy).HasMaxLength(200);
         builder.Property(x => x.UpdatedAt).IsRequired(false);
+        builder.Property(x=>x.UpdatedBy).HasMaxLength(200);
+        builder.Property(x=>x.IsDeleted).HasDefaultValue(false);
+        // Global soft-delete filter
+        builder.HasQueryFilter(x => !x.IsDeleted);
     }
 }
