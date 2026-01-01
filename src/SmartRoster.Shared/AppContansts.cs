@@ -4,5 +4,6 @@
     {
         public const string AppName = "SmartRoster";
         public const string SystemUser="system";
+        public const string DefaultConnectionString = "Default";
     }
 }
