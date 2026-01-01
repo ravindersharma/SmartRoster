@@ -1,10 +1,9 @@
 ﻿using FluentResults;
 using SmartRoster.Domain.Entities;
 
-namespace SmartRoster.Application.Abstractions.Services
+namespace SmartRoster.Application.Abstractions.Services;
+
+public interface IEmployeeService
 {
-    public interface IEmployeeService
-    {
-        Task<Result<Employee>> CreateAysnc(Employee employee, CancellationToken ct = default);
-    }
+    Task<Result<Employee>> CreateAysnc(Employee employee, CancellationToken ct = default);
 }
